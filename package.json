@@ -40,7 +40,7 @@
     "eslint-config-synacor": "^2.0.0",
     "if-env": "^1.0.0",
     "jest": "^21.0.0",
-    "jest-image-snapshot": "^1.0.0",
+    "jest-image-snapshot": "^2.0.0",
     "navalia": "^1.2.0",
     "npm-run-all": "^4.0.2",
     "preact-cli": "^2.0.0"
