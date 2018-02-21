@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl = 'http://api.wuththelint.com/';
+const baseUrl = 'http://api.lint.ninja';
 
 export const getCategories = () =>
 	axios.get(`${baseUrl}/linters/categories`).then(rsp => rsp.data.result);

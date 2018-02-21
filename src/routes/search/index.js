@@ -1,5 +1,4 @@
 import { h, Component } from 'preact';
-import capitalize from 'capitalize-it';
 import styled from 'styled-components';
 import { FadeInUp } from 'animate-css-styled-components';
 import { getLintersBySearch } from '../../lib/api';
@@ -32,20 +31,20 @@ export default class SearchRoute extends Component {
 		this.getLinters(nextProps.query);
 	}
 
-	// Note: `user` comes from the URL, courtesy of our router
 	render({ query }, { linters }) {
 		return (
 			<CategoryWrapper>
-				<h1>
-					Results for {capitalize(query)}:
-				</h1>
+				<h1>Results for {query.toLowerCase()}:</h1>
 				<ul>
-					{linters
-						? linters.map(linter => (
+					{linters ? (
+						linters.map(linter => (
 							<FadeInUp duration="0.8s">
 								<Linter linter={linter} />
-							</FadeInUp>))
-						: <Loading />}
+							</FadeInUp>
+						))
+					) : (
+						<Loading />
+					)}
 				</ul>
 			</CategoryWrapper>
 		);

@@ -1576,10 +1576,6 @@ caniuse-lite@^1.0.30000670, caniuse-lite@^1.0.30000697, caniuse-lite@^1.0.300007
   version "1.0.30000708"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000708.tgz#71dbf388c57f379b1bb66c89a890edc04c2509b6"
 
-capitalize-it@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/capitalize-it/-/capitalize-it-1.2.1.tgz#9fcf86adaef0302fec9f142223f1f0c0a96f98b9"
-
 capture-stack-trace@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/capture-stack-trace/-/capture-stack-trace-1.0.0.tgz#4a6fa07399c26bba47f0b2496b4d0fb408c5550d"

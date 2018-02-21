@@ -1,5 +1,4 @@
 import { h, Component } from 'preact';
-import capitalize from 'capitalize-it';
 import styled from 'styled-components';
 import { getLintersByCategory } from '../../lib//api';
 import Linter from '../../components/linter/index';
@@ -31,16 +30,14 @@ export default class Category extends Component {
 	render({ category }, { linters }) {
 		return (
 			<CategoryWrapper>
-				<h1>
-					{capitalize(category)} Linters:
-				</h1>
+				<h1>{category.toLowerCase()} linters:</h1>
 				<ul>
 					{linters &&
-						linters.map(linter =>
-							(<FadeInUp duration="0.8s">
+						linters.map(linter => (
+							<FadeInUp duration="0.8s">
 								<Linter linter={linter} />
-							</FadeInUp>)
-						)}
+							</FadeInUp>
+						))}
 				</ul>
 			</CategoryWrapper>
 		);
