@@ -9,7 +9,7 @@ const Input = styled.input`
 	border: 1px solid #ccc;
 	padding: 7px 14px 9px;
 	transition: 0.4s;
-	font-family: "Avenir Next", "helvetica", arial;
+	font-family: 'Avenir Next', 'helvetica', arial;
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 1.2px;
@@ -42,7 +42,7 @@ const Input = styled.input`
 
 	& ~ span:before,
 	& ~ span:after {
-		content: "";
+		content: '';
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -65,7 +65,7 @@ const Input = styled.input`
 		i {
 			&:before,
 			&:after {
-				content: "";
+				content: '';
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -114,6 +114,10 @@ class Search extends Component {
 
 		if (value.length > 1) {
 			route(`/search/${value}`);
+		}
+
+		if (!value.length) {
+			route(`/`);
 		}
 	}
 

@@ -1,10 +1,10 @@
+const OfflinePlugin = require('offline-plugin');
+const preactCliLodash = require('preact-cli-lodash');
+
 export default (config, env, helpers) => {
-	const plugin = helpers.getPluginsByName(config, 'SWPrecacheWebpackPlugin')[0];
+	const plugins = config.plugins
+	plugins.push(new OfflinePlugin())
+	preactCliLodash(config);
 
-	if ((plugin || {}).plugin) {
-		const options = plugin.plugin.options;
-
-		options.staticFileGlobsIgnorePatterns.push(/.DS_Store/);
-	}
-
+	return config
 };

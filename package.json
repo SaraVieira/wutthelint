@@ -4,14 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "eslint src",
-    "test:visual": "jest",
+    "lint": "eslint src",
     "test:size": "bundlesize",
+    "test": "run-s lint",
     "start": "npm run -s serve",
     "build": "preact build --template src/index.html -p",
     "serve": "preact serve",
-    "deploy": "npm run build && npm run test:size && cp now.json build/now.json && cd build && now && now alias",
-    "dev": "preact watch"
+    "deploy": "npm run build && s3_website push ",
+    "dev": "preact watch --template src/index.html"
   },
   "alias": "wuththelint",
   "keywords": [],
@@ -23,7 +23,7 @@
   "bundlesize": [
     {
       "path": "./build/bundle.*.js",
-      "maxSize": "24 kB"
+      "maxSize": "40 kB"
     },
     {
       "path": "./build/route-*.js",
@@ -35,9 +35,9 @@
     }
   ],
   "devDependencies": {
-    "bundlesize": "^0.15.0",
+    "bundlesize": "^0.16.0",
     "eslint": "^4.3.0",
-    "eslint-config-synacor": "^2.0.0",
+    "eslint-config-synacor": "^3.0.0",
     "if-env": "^1.0.0",
     "jest": "^22.0.6",
     "jest-image-snapshot": "^2.3.0",
@@ -45,15 +45,17 @@
     "less-loader": "^4.0.5",
     "navalia": "^1.2.0",
     "npm-run-all": "^4.0.2",
-    "preact-cli": "^2.0.0"
+    "offline-plugin": "^4.9.0",
+    "preact-cli": "^2.0.0",
+    "preact-cli-lodash": "^1.1.0"
   },
   "dependencies": {
     "animate-css-styled-components": "0.0.20",
     "axios": "^0.17.0",
-    "capitalize-it": "^1.2.1",
     "preact": "^8.2.1",
     "preact-compat": "^3.16.0",
+    "preact-render-to-string": "^3.7.0",
     "preact-router": "^2.5.5",
-    "styled-components": "^2.1.1"
+    "styled-components": "^3.1.3"
   }
 }
