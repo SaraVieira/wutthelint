@@ -34,7 +34,7 @@
     }
   ],
   "devDependencies": {
-    "bundlesize": "^0.16.0",
+    "bundlesize": "^0.17.0",
     "eslint": "^4.3.0",
     "eslint-config-synacor": "^2.0.0",
     "if-env": "^1.0.0",
