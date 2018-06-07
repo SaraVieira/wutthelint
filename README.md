@@ -12,7 +12,7 @@ Add your own linters at: https://github.com/SaraVieira/lint.ninja-server/blob/ma
 ## License
 The MIT License (MIT)
 
-Copyright (c) 2017 Sara Vieira
+Copyright (c) 2018 Sara Vieira
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
