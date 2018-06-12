@@ -49,7 +49,7 @@
     "preact-cli-lodash": "^1.1.0"
   },
   "dependencies": {
-    "animate-css-styled-components": "0.0.20",
+    "animate-css-styled-components": "1.0.0",
     "axios": "^0.17.0",
     "preact": "^8.2.1",
     "preact-compat": "^3.16.0",
