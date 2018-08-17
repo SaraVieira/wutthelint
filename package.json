@@ -39,7 +39,7 @@
     "eslint-config-synacor": "^2.0.0",
     "if-env": "^1.0.0",
     "jest": "^22.0.6",
-    "jest-image-snapshot": "^1.0.0",
+    "jest-image-snapshot": "^2.4.0",
     "less": "^3.0.0",
     "less-loader": "^4.0.5",
     "navalia": "^1.2.0",
