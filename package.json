@@ -36,7 +36,7 @@
   "devDependencies": {
     "bundlesize": "^0.16.0",
     "eslint": "^4.3.0",
-    "eslint-config-synacor": "^2.0.0",
+    "eslint-config-synacor": "^3.0.1",
     "if-env": "^1.0.0",
     "jest": "^22.0.6",
     "jest-image-snapshot": "^1.0.0",
